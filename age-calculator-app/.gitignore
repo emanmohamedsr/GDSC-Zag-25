@@ -1,0 +1,21 @@
+# Ignore all CSS files in /css EXCEPT style.css
+/css/*.css
+!/css/style.css
+
+# Ignore CSS source maps
+/css/*.css.map
+
+# Ignore Sass cache
+.sass-cache/
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore Prepros config
+prepros.config
+
+# Ignore OS/IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

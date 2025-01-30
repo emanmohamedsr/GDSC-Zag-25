@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+@mixin font($font-family) {
+	@font-face {
+		font-family: $font-family;
+		src: url("../assets/fonts/#{$font-family}.ttf") format("truetype");
+	}
+}
+@mixin break-points($media) {
+	@if ($media == "sm") {
+		@media ($sm-size) {
+			@content;
+		}
+	} @else if($media == "md") {
+		@media ($md-size) {
+			@content;
+		}
+	} @else if($media == "lg") {
+		@media ($lg-size) {
+			@content;
+		}
+	} @else {
+		@media ($xl-size) {
+			@content;
+		}
+	}
+}

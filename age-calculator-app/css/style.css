@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("../assets/fonts/Poppins-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
+body .container {
+  max-width: 350px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 95px 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  body .container {
+    padding: 30px;
+    max-width: 500px;
+  }
+}
+body .container form#get-date-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+  padding-bottom: 25px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  body .container form#get-date-form {
+    gap: 20px;
+  }
+}
+body .container form#get-date-form::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #dbdbdb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body .container form#get-date-form label {
+  font-family: "Poppins-Regular", sans-serif;
+  color: #6f6f6f;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+body .container form#get-date-form label input[type=number] {
+  max-width: 80px;
+  font-family: "Poppins-Bold", sans-serif;
+  padding: 10px 5px;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  font-size: 16px;
+  caret-color: #a45dbf;
+}
+body .container form#get-date-form label input[type=number]:focus {
+  outline: none;
+  border-color: #a45dbf;
+}
+@media (min-width: 768px) {
+  body .container form#get-date-form label input[type=number] {
+    max-width: 120px;
+    font-size: 32px;
+  }
+}
+body .container form#get-date-form label span {
+  height: 20px;
+}
+body .container form#get-date-form label.invalid {
+  color: #ff6f61;
+}
+body .container form#get-date-form label.invalid input[type=number] {
+  border-color: #ff6f61;
+}
+body .container form#get-date-form label.invalid span {
+  color: #ff6f61;
+}
+body .container form#get-date-form button {
+  z-index: 1;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, 50%);
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #a45dbf;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  body .container form#get-date-form button {
+    right: 0;
+    transform: translate(0, 50%);
+  }
+}
+body .container form#get-date-form button:focus {
+  outline: none;
+}
+body .container form#get-date-form button:hover {
+  background-color: #1f1f1f;
+}
+body .container form#get-date-form button > img {
+  max-width: 100%;
+}
+body .container div#age-display {
+  font-size: 40px;
+  font-family: "poppins-BoldItalic", sans-serif;
+}
+@media (min-width: 768px) {
+  body .container div#age-display {
+    font-size: 50px;
+  }
+}
+body .container div#age-display > p {
+  margin: -10px;
+}
+body .container div#age-display > p > span {
+  color: #a45dbf;
+}
