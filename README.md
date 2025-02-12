@@ -5,3 +5,6 @@
 
 <p>Task 1 - Age Caculator App</p>
 <a href="https://emanmohamedsr.github.io/Age-Caculator-App/">Task-2-link Demo...</a>
+
+<p>Task 3 - React show products & filtration method</p>
+<a href="https://github.com/emanmohamedsr/GDSC-Zag-25/tree/main/products">Task repo link</a>
