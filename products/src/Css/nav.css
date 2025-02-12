@@ -1,0 +1,124 @@
+nav {
+    height: 100px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    position: relative;
+}
+
+nav h1 {
+    color: #333;
+    text-shadow: 1px 0 0px #fff, 0 1px 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    padding: 30px;
+    background: #333;
+    border-radius: 6px;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 50px;
+    top: calc(100% + 30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+nav ul.active {
+    z-index: 9999999;
+    opacity: 1;
+    top: calc(100% + 10px);
+    visibility: visible;
+}
+
+@media (min-width: 992px) {
+    nav ul {
+        flex-direction: row;
+        gap: 50px;
+        opacity: 1;
+        visibility: visible;
+        padding: 0;
+        position: static;
+    }
+}
+
+nav ul li button.buttonAsALink {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+nav ul li button.buttonAsALink::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    left: -100%;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+nav ul li button.buttonAsALink:hover::after {
+    left: 0;
+}
+
+nav ul li button.buttonAsALink:focus {
+    outline: none;
+}
+
+nav button.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+@media (min-width: 992px) {
+    nav button.hamburger {
+        display: none;
+    }
+}
+
+nav button.hamburger:focus {
+    outline: none;
+}
+
+nav button.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: transform 0.3s ease, background-color 0.3s ease
+}
+
+nav button.hamburger.clicked span:first-of-type {
+    transform: rotate(45deg) translate(6px, 7px);
+}
+
+nav button.hamburger.clicked span:nth-of-type(2) {
+    opacity: 0;
+}
+
+nav button.hamburger.clicked span:last-of-type {
+    transform: rotate(-45deg) translate(4px, -6px);
+}

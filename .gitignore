@@ -1,0 +1,27 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Prepros configuration
+prepros.config
+
+# Ignore dependency directories
+/dist/
+/build/
+
+# Ignore log files
+*.log
+
+# Ignore npm/yarn lock files
+package-lock.json
+yarn.lock

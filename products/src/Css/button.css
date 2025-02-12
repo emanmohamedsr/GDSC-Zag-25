@@ -1,0 +1,16 @@
+.main-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4c68af;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background-color: #395685;
+}
+
+.main-btn:focus {
+    outline: none;
+}
