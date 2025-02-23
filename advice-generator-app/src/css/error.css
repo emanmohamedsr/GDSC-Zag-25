@@ -1,0 +1,12 @@
+.error {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #52ffa8;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: hsl(217, 19%, 24%);
+    text-shadow: 1px 0px 0px #52ffa8, 0px 1px 0px #52ffa8, -1px 0px 0px #52ffa8, 0px -1px 0px #52ffa8;
+}
