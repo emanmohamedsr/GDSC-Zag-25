@@ -3,7 +3,7 @@
 <h3>Task 1 - JS Variable Declaration & Datatypes in depth</h3>
 <p><a href="https://drive.google.com/file/d/1DHpt8UVTvDyM18e2h4k5zZfrcaTaoUtH/view?usp=sharing">Task-1-link</a></p>
 
-<h3>Task 1 - Age Caculator App</h3>
+<h3>Task 2 - Age Caculator App using sass/scss</h3>
 <p><a href="https://github.com/emanmohamedsr/Age-Caculator-App">Task repo link</a></p>
 <p><a href="https://emanmohamedsr.github.io/Age-Caculator-App/">Live Demo...</a></p>
 
