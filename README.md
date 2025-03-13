@@ -19,3 +19,7 @@
 <p><a href="https://github.com/emanmohamedsr/first-e-commerce-app">Task repo link</a></p>
 <p><a href="https://first-e-commerce-app.vercel.app/">Live Demo...</a></p>
 
+<h3>Task 6 - React E-commerce App updated with a real API and adminDashboard with CURD operations</h3>
+<p><a href="https://github.com/emanmohamedsr/first-e-commerce-json-server">Task repo link</a></p>
+<p><a href="https://first-e-commerce-json-server.vercel.app/">Live Demo...</a></p>
+
