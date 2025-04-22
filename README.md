@@ -23,3 +23,8 @@
 <p><a href="https://github.com/emanmohamedsr/first-e-commerce-json-server">Task repo link</a></p>
 <p><a href="https://first-e-commerce-json-server.vercel.app/">Live Demo...</a></p>
 
+<h3>Task 7 - ReactContext reading a document</h3>
+<p><a href="#">Done :)</a></p>
+
+<h3>Task 8 - Redux With pure JavaScript</h3>
+<p><a href="https://github.com/emanmohamedsr/GDSC-Zag-25/blob/main/Redux-with-Js/index.js">Task repo link</a></p>
